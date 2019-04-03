@@ -108,6 +108,23 @@
 			display: flex;
 			justify-content: space-between;
 		}
+		&-sublist {
+			display: none;
+			&--active {
+				background-color: white;
+				display: flex;
+				position: absolute;
+				bottom: -115px;
+				z-index: 2;
+				flex-direction: column;
+				padding: 10px 20px;
+
+				> li a {
+					display: inline-block;
+				}
+			}
+			
+		}
 		&-item {
 			&-link {
 				padding: 5px 10px;
