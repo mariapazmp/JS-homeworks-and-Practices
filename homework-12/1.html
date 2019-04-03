@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script>
+        function addItem(value) {
+            if (!value) {
+                return;
+            }
+            var myselect = document.getElementById('myselect');
+            var newoption = myselect.appendChild(document.createElement('option'));
+            newoption.value = value;
+            newoption.innerHTML = value;
+        }
+
+        function removeCurrentItem() {
+            var myselect = document.getElementById('myselect');
+            if (myselect.selectedIndex === -1) {
+                return;
+            }
+            var selectedOption = myselect.options[myselect.selectedIndex];
+            selectedOption.parentNode.removeChild(selectedOption);
+        }
+    </script>
+</head>
+
+<body>
+    <select id="myselect" size="4"></select>
+    <button onClick="addItem(prompt('enter value'))">+</button>
+    <button onClick="removeCurrentItem()" />-</button>
+</body>
+
+</html>
