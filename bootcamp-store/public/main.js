@@ -3,6 +3,7 @@ $(window).bind("load", function() {
 
     const mainMenuMakeup = () => {
         $(".header__nav-sublist").parent().addClass("header__nav-with-submenu");
+        $(".header__nav-sublist").parent().append('<i class="fas fa-chevron-down"></i>');
         //add class to the container to indicate that it has a submenu
     };
 
@@ -13,7 +14,12 @@ $(window).bind("load", function() {
     mainMenuMakeup();
 
     $(".header__nav-with-submenu").click(function(){
-        subMenu($(this));
+        subMenuEvents($(this));
+    })
+
+    $(".header__nav-with-submenu").focusout(function(){
+        console.log("focusout");
+        $(this).find("ul").removeClass("header__nav-sublist--active");        
     })
 
  });

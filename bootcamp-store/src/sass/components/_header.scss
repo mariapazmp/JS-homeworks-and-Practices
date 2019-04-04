@@ -103,33 +103,31 @@
 		}
 	}
 	&__nav {
-		padding: 25px 0;
 		&-list {
 			display: flex;
 			justify-content: space-between;
 		}
 		&-sublist {
-			display: none;
+			display: none;	
 			&--active {
 				background-color: white;
 				display: block;
 				position: absolute;
-				bottom: -115px;
 				z-index: 2;
 				flex-direction: column;
 				padding: 10px 20px;
+				margin-top: 25px;
 
 				> li a {
 					display: inline-block;
+					padding: 5px 10px;
 				}
-			}	
-			&::before {
-				
 			}		
 		}
 		&-item {
+			padding: 25px 0;						
 			&-link {
-				padding: 5px 10px;
+				padding: 25px 0;
 				color: $black-color;
 				text-transform: uppercase;
 				font-weight: 500;
@@ -142,6 +140,7 @@
 				.header__nav-item-link {
 					color: $main-red-color;
 				}
+
 			}
 		}
 	}
