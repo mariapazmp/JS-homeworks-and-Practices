@@ -112,7 +112,7 @@
 			display: none;
 			&--active {
 				background-color: white;
-				display: flex;
+				display: block;
 				position: absolute;
 				bottom: -115px;
 				z-index: 2;
@@ -122,8 +122,10 @@
 				> li a {
 					display: inline-block;
 				}
-			}
-			
+			}	
+			&::before {
+				
+			}		
 		}
 		&-item {
 			&-link {
