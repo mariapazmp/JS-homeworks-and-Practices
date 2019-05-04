@@ -1,0 +1,136 @@
+.footer {
+    background-color: $dark-grey-color;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: $main-gray-color;
+
+    & .container {        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__leftbar, &__rightbar {
+        flex: 1 0 0;
+        padding: 0 2rem;
+    }
+
+    &__logo img {
+        max-width: 200px;
+    }
+
+    &__social-media {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        &-icon {
+            flex: 1 0 0;
+            text-align: center;
+        }
+
+        &-link {
+            color: $white-color;           
+            padding: 1rem;
+            border-radius: 2rem;
+            border: 1px white solid;
+            width: 4rem;
+            height: 4rem;
+            display: inline-block;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $dark-grey-color;
+                background-color: $white-color;
+                border: none;
+            }
+        }
+    }        
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        color: $gray-light-color;
+        font-weight: 400;
+    }
+
+    &__nav {
+        flex: 2 0 0;
+        padding: 0 2rem;
+        display: flex;
+
+        &-column {
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        &-item {
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+
+            &-link {
+                color: $main-gray-color;
+    
+                &:hover {
+                    opacity: 0.4;
+                    color: $gray-light-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        
+    }
+
+    &__sign-up {
+        margin-bottom: 2rem;
+
+        &-form {
+            display: flex;
+
+            input {
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__contact-us p {
+        font-size: 1.25rem;
+    }
+
+    &__copyright {
+        margin-top: 2rem;
+        border-top: 1px #262626 solid;
+
+        & p {
+            flex: 1;
+            padding: 2rem 0 0 2rem;
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+    }
+    
+}
+
+.form {
+    &__input {
+        &--dark {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px #5f5f5f solid;
+        }
+    }
+    &__button {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        &--submit {
+            background-color: $main-red-color;
+            color: $white-color;
+        }
+        &--cancel {
+            background-color: none;
+            color: $main-red-color;
+            border: 1px $main-red-color solid;
+        }
+    }
+}

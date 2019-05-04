@@ -1,8 +1,20 @@
 // colors
 $white-color: #fff;
 $black-color: #000;
+$dark-grey-color: #1a1a1a;
 $blue-color: #214bff;
 $blue-light-color: #1f72ff;
 $main-gray-color: #ccd0d3;
 $gray-light-color: #f0f2f4;
 $main-red-color: #ff0000;
+
+/*Hexa-colors
+$hx-dark-grey-color: 26,26,26;
+
+@mixin color($rgb, $alpha) {
+    color: rgba($rgb, $alpha);
+}
+
+@mixin background-color($rgb, $alpha) {
+    background-color: rgba($rgb,$alpha);
+}*/
