@@ -19,13 +19,10 @@ $(window).bind("load", function() {
         let itemMiniCart = document.querySelector(".mini-cart__product-item").cloneNode(true);
         itemMiniCart.querySelector(".mini-cart__product-image img").setAttribute("src", cardInfo.imageSrc);
         itemMiniCart.querySelector(".mini-cart__product-name").textContent = cardInfo.productName; 
+        
+        cardInfo.productPrice = parseInt(cardInfo.productPrice.split(/\$/g)[1]);
         itemMiniCart.querySelector(".mini-cart__product-price").textContent = cardInfo.productPrice;
 
         document.querySelector(".mini-cart__product-list").appendChild(itemMiniCart);
-
-        //console.log(itemMiniCart.querySelector(".mini-cart__product-image img"));
-        
-        //
-
     }
 });
